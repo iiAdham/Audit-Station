@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests Dashboard</title>
+    <link rel="stylesheet" href="assets/vendors/Font Awesome/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css"> <!-- Include your own CSS file for custom styles -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="px-0 col-xxl-2 col-lg-3 col-md-4 col-sm-1  d-md-block bg-main sidebar">
+                <div class="sidebar-sticky">
+
+                    <img src="assets/imgs/audit-station.jpg" class="img-fluid mb-3 logo" alt="">
+                    <div class="text-center">
+                        <button class="btn openMenuBtn"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <ul class="sidebarNav flex-column">
+                        <li class="nav-item py-3">
+
+                            <a class="nav-link active" href="#">
+                                <i class="fa-solid fa-house pe-2"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link nav-active" href="#">
+                                <i class="fa-solid fa-inbox pe-2"></i><span>Requests</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-user pe-2"></i><span>Users</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-users pe-2"></i><span>User Management</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question pe-2"></i><span>Questions</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-certificate pe-2"></i><span>Accreditation Management</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-list pe-2"></i><span>Categories</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-exclamation pe-2"></i><span>Permissions</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-stairs pe-2"></i><span>Steps To Be Unique</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-chart-simple pe-2"></i><span>Statistics</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question pe-2"></i><span>FAQS</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-message pe-2"></i><span>Chat Support</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-headset pe-2"></i><span>Contact Support</span>
+                            </a>
+                        </li>
+                        <!-- Add more navigation items here -->
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-8 col-xxl-10 col-lg-9 col-sm-11 p-0 container">
+                <nav class="prof navbar navbar-expand justify-content-end">
+                    <div>
+                        <div class="" id="navbarSupportedContent">
+                            <ul class="profileNav navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end align-items-center
+                                pe-0">
+
+
+                                <li class="row justify-content-end ">
+                                <li class="nav-item dropdown font-color">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Eng (US)
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="brd me-3 px-1">
+                                    <button class="btn notifications">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span>3</span>
+                                    </button>
+                                </li>
+                                <div class="col-1">
+                                    <img src="assets/imgs/placeholder.jpg" class="w-100 rounded-5">
+                                </div>
+                                <ul class="col-3 p-0">
+                                    <li class="nav-item dropdown">
+                                        <div class="">
+                                            <a class="nav-link dropdown-toggle text-dark py-0 pe-0" href="#"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Musfiq Iman
+                                            </a>
+                                            <span class="nav-link font-color py-0 fs-10 pe-0">
+                                                Admin
+                                            </span>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="px-5">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                        <h1 class="font-color title">Requests <span class="d-block"><i class="fa-solid fa-house"></i> \
+                                Requests</span>
+                        </h1>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <div class="inputs">
+                                <input type="text" class="searchInput form-control ps-3" placeholder="Search here">
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-10 p-0 pe-1">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Request</option>
+                                        <option value="1">All request</option>
+                                        <option value="2">Company Upgrade Requests</option>
+                                        <option value="3">Accountant Upgrade Requests</option>
+                                        <option value="1">All request</option>
+                                        <option value="2">Company Upgrade Requests</option>
+                                        <option value="3">Accountant Upgrade Requests</option>
+                                    </select>
+                                </div>
+                                <div class="col-2 p-0 text-center">
+                                    <button class="btn delete">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table custom-table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox">
+                                    </th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Position</th>
+                                    <th class="text-center">Request</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            <input type="checkbox">
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            Mohamed Ali
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">olivia@untitlededu.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">Certified</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0 text-center requestCard interviewer">Interviewer</p>
+                                    </td>
+                                    <td>
+                                        <div class="button-group">
+                                            <button class="btn myBtn-info btn-sm px-2 py-2">View<i
+                                                    class="ps-3 pe-2 fa-regular fa-eye"></i></button>
+                                            <button class="btn myBtn-success btn-sm px-2 py-2">Accept<i
+                                                    class="ps-3 pe-2 fa-solid fa-check"></i></button>
+                                            <button class="btn myBtn-danger btn-sm px-2 py-2">Reject<i
+                                                    class="ps-3 pe-2 fa-solid fa-x"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            <input type="checkbox">
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            Mohamed Ali
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">olivia@untitlededu.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">Certified</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0 text-center requestCard company">Company</p>
+                                    </td>
+                                    <td>
+                                        <div class="button-group">
+                                            <button class="btn myBtn-info btn-sm px-2 py-2">View<i
+                                                    class="ps-3 pe-2 fa-regular fa-eye"></i></button>
+                                            <button class="btn myBtn-success btn-sm px-2 py-2">Accept<i
+                                                    class="ps-3 pe-2 fa-solid fa-check"></i></button>
+                                            <button class="btn myBtn-danger btn-sm px-2 py-2">Reject<i
+                                                    class="ps-3 pe-2 fa-solid fa-x"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            <input type="checkbox">
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            Mohamed Ali
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">olivia@untitlededu.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">Certified</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0 text-center requestCard accountant">Accountant</p>
+                                    </td>
+                                    <td>
+                                        <div class="button-group">
+                                            <button class="btn myBtn-info btn-sm px-2 py-2">View<i
+                                                    class="ps-3 pe-2 fa-regular fa-eye"></i></button>
+                                            <button class="btn myBtn-success btn-sm px-2 py-2">Accept<i
+                                                    class="ps-3 pe-2 fa-solid fa-check"></i></button>
+                                            <button class="btn myBtn-danger btn-sm px-2 py-2">Reject<i
+                                                    class="ps-3 pe-2 fa-solid fa-x"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            <input type="checkbox">
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            Mohamed Ali
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">olivia@untitlededu.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">Certified</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0 text-center requestCard inst">Instructor</p>
+                                    </td>
+                                    <td>
+                                        <div class="button-group">
+                                            <button class="btn myBtn-info btn-sm px-2 py-2">View<i
+                                                    class="ps-3 pe-2 fa-regular fa-eye"></i></button>
+                                            <button class="btn myBtn-success btn-sm px-2 py-2">Accept<i
+                                                    class="ps-3 pe-2 fa-solid fa-check"></i></button>
+                                            <button class="btn myBtn-danger btn-sm px-2 py-2">Reject<i
+                                                    class="ps-3 pe-2 fa-solid fa-x"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            <input type="checkbox">
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">
+                                            Mohamed Ali
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">olivia@untitlededu.com</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0">Certified</p>
+                                    </td>
+                                    <td>
+                                        <p class="py-2 m-0 text-center requestCard cert">Certified</p>
+                                    </td>
+                                    <td>
+                                        <div class="button-group">
+                                            <button class="btn myBtn-info btn-sm px-2 py-2">View<i
+                                                    class="ps-3 pe-2 fa-regular fa-eye"></i></button>
+                                            <button class="btn myBtn-success btn-sm px-2 py-2">Accept<i
+                                                    class="ps-3 pe-2 fa-solid fa-check"></i></button>
+                                            <button class="btn myBtn-danger btn-sm px-2 py-2">Reject<i
+                                                    class="ps-3 pe-2 fa-solid fa-x"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 text-center">
+                            <button class="btn indecator"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="btn indecator-active indecator">1</button>
+                            <button class="btn indecator">2</button>
+                            <button class="btn indecator">3</button>
+                            <button class="btn indecator">4</button>
+                            <button class="btn indecator">5</button>
+                            <button class="btn indecator">6</button>
+                            <button class="btn indecator">7</button>
+                            <button class="btn indecator">8</button>
+                            <button class="btn indecator"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets/vendors/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests Dashboard</title>
+    <link rel="stylesheet" href="assets/vendors/Font Awesome/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css"> <!-- Include your own CSS file for custom styles -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="px-0 col-xxl-2 col-lg-3 col-md-4 col-sm-1  d-md-block bg-main sidebar">
+                <div class="sidebar-sticky">
+
+                    <img src="assets/imgs/audit-station.jpg" class="img-fluid mb-3 logo" alt="">
+                    <div class="text-center">
+                        <button class="btn openMenuBtn"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <ul class="sidebarNav flex-column">
+                        <li class="nav-item py-3">
+
+                            <a class="nav-link active" href="#">
+                                <i class="fa-solid fa-house pe-2"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link nav-active" href="#">
+                                <i class="fa-solid fa-inbox pe-2"></i><span>Requests</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-user pe-2"></i><span>Users</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-users pe-2"></i><span>User Management</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question pe-2"></i><span>Questions</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-certificate pe-2"></i><span>Accreditation Management</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-list pe-2"></i><span>Categories</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-exclamation pe-2"></i><span>Permissions</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-stairs pe-2"></i><span>Steps To Be Unique</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-chart-simple pe-2"></i><span>Statistics</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question pe-2"></i><span>FAQS</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-message pe-2"></i><span>Chat Support</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-headset pe-2"></i><span>Contact Support</span>
+                            </a>
+                        </li>
+                        <!-- Add more navigation items here -->
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-8 col-xxl-10 col-lg-9 col-sm-11 p-0 container">
+                <nav class="prof navbar navbar-expand justify-content-end">
+                    <div>
+                        <div class="" id="navbarSupportedContent">
+                            <ul class="profileNav navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end align-items-center
+                                pe-0">
+
+
+                                <li class="row justify-content-end ">
+                                <li class="nav-item dropdown font-color">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Eng (US)
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="brd me-3 px-1">
+                                    <button class="btn notifications">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span>3</span>
+                                    </button>
+                                </li>
+                                <div class="col-1">
+                                    <img src="assets/imgs/placeholder.jpg" class="w-100 rounded-5">
+                                </div>
+                                <ul class="col-3 p-0">
+                                    <li class="nav-item dropdown">
+                                        <div class="">
+                                            <a class="nav-link dropdown-toggle text-dark py-0 pe-0" href="#"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Musfiq Iman
+                                            </a>
+                                            <span class="nav-link font-color py-0 fs-10 pe-0">
+                                                Admin
+                                            </span>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="px-5">
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                        <h1 class="font-color title">Requests <span class="d-block"><i class="fa-solid fa-house"></i> \
+                                Requests \ Accountant request</span>
+                        </h1>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                        <h1 class="sec-font-color title">Personal Info
+                        </h1>
+                    </div>
+                    <hr style="color: rgb(141, 140, 140) !important;">
+                    <div class="row justify-content-center mb-5">
+                        <div class="row mt-5 mb-3">
+                            <div class="col-lg-4 col-md-6 info mb-10">
+                                <div>
+                                    <div class="row align-items-center">
+                                        <div class="col-2 text-end">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-1 header">Full Name</p>
+                                            <p class="m-0 header-details">Jane Cooper</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 info mb-10">
+                                <div>
+                                    <div class="row align-items-center">
+                                        <div class="col-2 text-end">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-1 header">Email</p>
+                                            <p class="m-0 header-details">Example@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 info mb-10">
+                                <div>
+                                    <div class="row align-items-center">
+                                        <div class="col-2 text-end">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-1 header">Phone Number</p>
+                                            <p class="m-0 header-details">020 123456789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 info">
+                                <div>
+                                    <div class="row align-items-center">
+                                        <div class="col-2 text-end">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-1 header">Country</p>
+                                            <p class="m-0 header-details">Egypt</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 info">
+                                <div>
+                                    <div class="row align-items-center">
+                                        <div class="col-2 text-end">
+                                            <i class="fa-solid fa-calendar-days"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-1 header">Request Date</p>
+                                            <p class="m-0 header-details">12/1/2024-10AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 info">
+                                <div>
+                                    <div class="row align-items-center">
+                                        <div class="col-2 text-end">
+                                            <i class="fa-regular fa-file"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="mb-1 header">High level of education</p>
+                                            <p class="m-0 header-details">Bachelor of accounting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                        <h1 class="sec-font-color title">Professional Certifcations
+                        </h1>
+                    </div>
+                    <hr style="color: rgb(141, 140, 140) !important;">
+                    <div class="row justify-content-center mb-5">
+                        <div class="row mt-5 mb-3">
+                            <label class="header fw-bold text-dark">Certificate Name</label>
+                            <div>
+                                <div class="col-11 certificate">
+                                    <div>
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-1 text-end">
+                                                <i class="fa-regular fa-file-pdf"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="mb-1 header-details">Selection</p>
+                                                <p class="m-0 header opacity-50">JPG, PNG or PDF, file size no more than
+                                                    10MB
+                                                </p>
+                                            </div>
+                                            <div class="col-1">
+                                                <button class="btn downloadBtn">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-3">
+                            <label class="header fw-bold text-dark">Certificate Name</label>
+                            <div>
+                                <div class="col-11 certificate">
+                                    <div>
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-1 text-end">
+                                                <i class="fa-regular fa-file-pdf"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="mb-1 header-details">Selection</p>
+                                                <p class="m-0 header opacity-50">JPG, PNG or PDF, file size no more than
+                                                    10MB
+                                                </p>
+                                            </div>
+                                            <div class="col-1">
+                                                <button class="btn downloadBtn">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                        <h1 class="sec-font-color title">Courses
+                        </h1>
+                    </div>
+                    <hr style="color: rgb(141, 140, 140) !important;">
+                    <div class="row justify-content-center mb-5">
+                        <div class="row mt-5 mb-3">
+                            <label class="header fw-bold text-dark">Course Name</label>
+                            <div>
+                                <div class="col-11 certificate">
+                                    <div>
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-1 text-end">
+                                                <i class="fa-regular fa-file-pdf"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="mb-1 header-details">Selection</p>
+                                                <p class="m-0 header opacity-50">JPG, PNG or PDF, file size no more than
+                                                    10MB
+                                                </p>
+                                            </div>
+                                            <div class="col-1">
+                                                <button class="btn downloadBtn">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mb-3">
+                            <label class="header fw-bold text-dark">Course Name</label>
+                            <div>
+                                <div class="col-11 certificate">
+                                    <div>
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-1 text-end">
+                                                <i class="fa-regular fa-file-pdf"></i>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="mb-1 header-details">Selection</p>
+                                                <p class="m-0 header opacity-50">JPG, PNG or PDF, file size no more than
+                                                    10MB
+                                                </p>
+                                            </div>
+                                            <div class="col-1">
+                                                <button class="btn downloadBtn">
+                                                    <i class="fa-solid fa-download"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+                        <h1 class="sec-font-color title">Certified Exam
+                        </h1>
+                    </div>
+                    <hr style="color: rgb(141, 140, 140) !important;">
+                    <div class="row justify-content-center mb-5">
+                        <div class="row mt-5 mb-3">
+                            <div>
+                                <div class="col-11 certificate">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-lg-2 ps-5">Points:</div>
+                                            <div class="col-lg-10 row">
+                                                <p class="m-0 col-lg-10">40/70</p>
+                                                <p class="m-0 col-lg-2 text-center p-0 passed"><i
+                                                        class="fa-regular fa-thumbs-up"></i> Passed</p>
+                                            </div>
+                                            <div class="col-lg-2 ps-5">Percentage:</div>
+                                            <div class="col-lg-10 row">
+                                                <p class="m-0 col-lg-12">60%</p>
+                                            </div>
+                                            <div class="col-lg-2 ps-5">Duration:</div>
+                                            <div class="col-lg-10 row">
+                                                <p class="m-0 col-lg-12">00:00:24</p>
+                                            </div>
+                                            <div class="col-lg-2 ps-5">Date started:</div>
+                                            <div class="col-lg-10 row">
+                                                <p class="m-0 col-lg-12">Tue 10 Sep 24 04:00</p>
+                                            </div>
+                                            <div class="col-lg-2 ps-5">Date finished:</div>
+                                            <div class="col-lg-10 row">
+                                                <p class="m-0 col-lg-12">Tue 10 Sep 24 04:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="ms-5 ps-2 mt-4 feedback">
+                                            <p class="fw-bold pt-4">Feedback</p>
+                                            <p class="pb-4">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                                                exercitationem commodi eveniet delectus, illum doloremque neque, beatae
+                                                autem enim rerum sint in labore voluptas, sit impedit iure hic rem esse?
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-11 mt-5">
+                                <div class="text-end">
+                                    <button class="btn myBtn-back"><i class="fa-solid fa-arrow-left-long"></i>
+                                        Back</button>
+                                    <button class="btn myBtn-danger">Reject <i class="fa-solid fa-x"></i></button>
+                                    <button class="btn myBtn-success">Accept <i class="fa-solid fa-check"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets/vendors/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
