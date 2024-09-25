@@ -58,10 +58,9 @@ hr {
   background-color: var(--second-color);
 }
 
-/* .sidebar {
-  height: 100vh;
-  overflow: auto;
-} */
+.sidebar {
+  transition: width 0.3s ease;
+}
 
 .nav-active {
   color: rgb(20, 20, 20);
@@ -366,7 +365,7 @@ ul {
     display: none;
   }
 
-  .sidebarNav .nav-item .nav-link span {
+  .d-none-767 {
     display: none;
   }
 
@@ -405,13 +404,15 @@ ul {
   }
 }
 
-@media (max-width:576px) {
+@media (max-width:577px) {
   .sidebar {
-    height: 40px;
     overflow: hidden;
   }
-}
 
+  .height-40-576 {
+    height: 40px;
+  }
+}
 
 @media (max-width:467px) {
   .profileNav {
