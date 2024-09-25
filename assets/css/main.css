@@ -58,10 +58,10 @@ hr {
   background-color: var(--second-color);
 }
 
-.sidebar {
+/* .sidebar {
   height: 100vh;
   overflow: auto;
-}
+} */
 
 .nav-active {
   color: rgb(20, 20, 20);
@@ -344,11 +344,21 @@ ul {
 
 .fa-thumbs-up {
   font-size: 20px !important;
+  padding: 5px 5px 5px 0 !important;
 }
 
 .feedback {
   border-left: 6px solid var(--main-color);
   border-radius: 10px;
+}
+
+.pass-container {
+  right: 2%;
+}
+
+.pass-pos {
+  width: 100%;
+
 }
 
 @media (max-width:767px) {
@@ -383,6 +393,17 @@ ul {
 
 }
 
+@media (max-width:1193px) {
+  .indecator {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:1132px) {
+  .indecator {
+    font-size: 11px;
+  }
+}
 
 @media (max-width:576px) {
   .sidebar {

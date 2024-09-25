@@ -155,41 +155,43 @@
                     </div>
                 </nav>
 
-                <div class="px-5">
+                <div class="px-lg-4 px-md-3">
                     <div
                         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
                         <h1 class="font-color title">Requests <span class="d-block"><i class="fa-solid fa-house"></i> \
                                 Requests</span>
                         </h1>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-8">
-                            <div class="inputs">
-                                <input type="text" class="searchInput form-control ps-3" placeholder="Search here">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col-md-9 col-6">
+                                <div class="inputs">
+                                    <input type="text" class="searchInput form-control ps-3" placeholder="Search here">
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="row">
+                                    <div class="col-9 p-0 pe-1">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Request</option>
+                                            <option value="1">All request</option>
+                                            <option value="2">Company Upgrade Requests</option>
+                                            <option value="3">Accountant Upgrade Requests</option>
+                                            <option value="1">All request</option>
+                                            <option value="2">Company Upgrade Requests</option>
+                                            <option value="3">Accountant Upgrade Requests</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2 p-0 text-center">
+                                        <button class="btn delete">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
-                        <div class="col-4">
-                            <div class="row">
-                                <div class="col-10 p-0 pe-1">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Request</option>
-                                        <option value="1">All request</option>
-                                        <option value="2">Company Upgrade Requests</option>
-                                        <option value="3">Accountant Upgrade Requests</option>
-                                        <option value="1">All request</option>
-                                        <option value="2">Company Upgrade Requests</option>
-                                        <option value="3">Accountant Upgrade Requests</option>
-                                    </select>
-                                </div>
-                                <div class="col-2 p-0 text-center">
-                                    <button class="btn delete">
-                                        <i class="fa-solid fa-trash"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div class="table-responsive">
                         <table class="table custom-table table-striped table-sm">
@@ -365,8 +367,8 @@
                         </table>
 
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-6 text-center">
+                    <div class="my-3 px-5">
+                        <div class="text-center">
                             <button class="btn indecator"><i class="fa-solid fa-chevron-left"></i></button>
                             <button class="btn indecator-active indecator">1</button>
                             <button class="btn indecator">2</button>
